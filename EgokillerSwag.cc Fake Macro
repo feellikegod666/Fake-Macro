@@ -16,8 +16,8 @@ function onButton1Up(mouse)
 end
  
 function onSelected(mouse)
-    mouse.KeyDown:connect(function(q) if q:lower()=="q"then onButton1Down(mouse)end end)
-    mouse.KeyUp:connect(function(q) if q:lower()=="q"then onButton1Up(mouse)end end)
+    mouse.KeyDown:connect(function(v) if q:lower()=="v"then onButton1Down(mouse)end end)
+    mouse.KeyUp:connect(function(v) if q:lower()=="v"then onButton1Up(mouse)end end)
 end
 onSelected(game.Players.LocalPlayer:GetMouse())
 game.StarterGui:SetCore("SendNotification",{
